@@ -30,8 +30,9 @@ import Image, ImageDraw, ImageFont
 import os, sys, urllib
 
 def get(o, targetImg):
+    ''' Check for an image like "2n3e.png" on xkcd server. Copy if not present
+        in "originals/" folder and return true.'''
     global missing
-    
     baseURL = 'http://imgs.xkcd.com/clickdrag'
     found = False
     if os.path.exists('originals/%s' % targetImg) or targetImg in missing:
@@ -118,7 +119,7 @@ if False:
         im.save('%s/%s' % ('thumbnails', img))
 
 # build a composite image                    
-if False:
+if True:
     hor = []
     for h1 in range(maxW[1], 0, -1):
         hor.append('%s%s' % (h1, 'w'))
@@ -152,7 +153,7 @@ if False:
     print 'composite.png saved'
 
 #build html file
-if True:
+if False:
     f = open('clickdrag.html', 'w')
     f.write('<html>\n<head></head>\n<body>\n')
     size = 25
