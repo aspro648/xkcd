@@ -20,7 +20,7 @@ Notable tiles:
 - 9n2e.png "Huston, we have a problem". Apollo 13 reference.
 - 5n12e.png "Daisy, Daisy ...". 2001 Space Odesy reference.
 - 8n6e.png "Red Five". Star Wars
-= 8s17w.png "Copy Gold leader". Another Star Wars.
+- 8s17w.png "Copy Gold leader". Another Star Wars.
 - 13n1e.png Falling whales. Douglas Adams Reference?
 
 
