@@ -9,6 +9,15 @@ The Planiverse: Computer Contact with a Two-Dimensional World
 by A.K. Dewdney
 '''
 
+if True:
+    
+    im = Image.open('originals/11s11w.png')
+    data = list(im.getdata())
+    for c,i in enumerate(data):
+        if i != 0:
+            print c, i
+        
+
 
 if False:
     files = os.listdir(os.path.join(os.getcwd(),'originals'))
@@ -21,7 +30,7 @@ if False:
         im = im.resize(size, Image.ANTIALIAS)
         im.save('%s/%s' % ('thumbs', img))
                     
-if True:
+if False:
     hor = []
     for h1 in range(33, 0, -1):
         hor.append('%s%s' % (h1, 'w'))
